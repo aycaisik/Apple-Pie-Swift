@@ -1,24 +1,336 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Apple_Pie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3qp-Wv-n1Y">
+                                <rect key="frame" x="0.0" y="24" width="1180" height="776"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="wIn-KE-7ay">
+                                        <rect key="frame" x="0.0" y="0.0" width="1180" height="556"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SkI-WP-rIu">
+                                        <rect key="frame" x="0.0" y="556" width="1180" height="220"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cmt-OA-MXD">
+                                                <rect key="frame" x="0.0" y="0.0" width="1180" height="31.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJi-xD-Cyl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="A"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Oq-g6-ZZD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bD-PM-4jC">
+                                                        <rect key="frame" x="236" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="B"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VzB-zD-VkM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzu-Dj-ivL">
+                                                        <rect key="frame" x="472" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="C"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CX8-IO-uNP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-fs-zUm">
+                                                        <rect key="frame" x="708" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="D"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Jp-dl-sv6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqr-fd-O67">
+                                                        <rect key="frame" x="944" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="E"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="piV-bl-zig">
+                                                <rect key="frame" x="0.0" y="31.5" width="1180" height="31.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pi-Px-cG5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="F"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WTk-81-zOG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlM-ho-5pc">
+                                                        <rect key="frame" x="236" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="G"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1z-Vv-kbf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOP-Wb-udA">
+                                                        <rect key="frame" x="472" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="H"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jzw-K2-gSW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKY-fU-PNh">
+                                                        <rect key="frame" x="708" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="I"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vuQ-oP-qXU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-dW-JQY">
+                                                        <rect key="frame" x="944" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="J"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQl-bs-mqm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8r4-DF-dNO">
+                                                <rect key="frame" x="0.0" y="63" width="1180" height="31.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80e-fL-rBQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="K"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LMF-K8-J2t"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbG-R4-1C8">
+                                                        <rect key="frame" x="236" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="L"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fs-Kf-j6q"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4b-Xa-2tj">
+                                                        <rect key="frame" x="472" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="M"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYd-jF-Ks0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abd-bE-oMA">
+                                                        <rect key="frame" x="708" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="N"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQu-6f-wiv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUD-ML-bqM">
+                                                        <rect key="frame" x="944" y="0.0" width="236" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="O"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZbA-Qq-RoA"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gOb-sH-4Az">
+                                                <rect key="frame" x="0.0" y="94.5" width="1180" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRk-YD-8MW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="236" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="P"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rt7-Lo-36I"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-hE-V3N">
+                                                        <rect key="frame" x="236" y="0.0" width="236" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Q"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3B-7Y-mMJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUL-Gh-29Z">
+                                                        <rect key="frame" x="472" y="0.0" width="236" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="R"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGY-2G-bpb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB1-m0-W8N">
+                                                        <rect key="frame" x="708" y="0.0" width="236" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="S"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q41-fu-3iS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttz-eF-2c5">
+                                                        <rect key="frame" x="944" y="0.0" width="236" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="T"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R83-XK-joj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aTC-fc-34h">
+                                                <rect key="frame" x="0.0" y="125.5" width="1180" height="31.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz3-qO-z1Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="196.5" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="U"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeC-wZ-9Vv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jf-FA-J1z">
+                                                        <rect key="frame" x="196.5" y="0.0" width="197" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="V"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZT-hy-U4J"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRP-Rt-HfQ">
+                                                        <rect key="frame" x="393.5" y="0.0" width="196.5" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="W"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVs-jd-E6U"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2J-IL-541">
+                                                        <rect key="frame" x="590" y="0.0" width="196.5" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0s-b2-YHd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8q-XF-GDA">
+                                                        <rect key="frame" x="786.5" y="0.0" width="197" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Y"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kt-X8-Tj4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODC-S6-40Y">
+                                                        <rect key="frame" x="983.5" y="0.0" width="196.5" height="31.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Z"/>
+                                                        <connections>
+                                                            <action selector="butonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbU-WP-6bI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-V0-AWr">
+                                                <rect key="frame" x="0.0" y="157" width="1180" height="31.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="90D-Bm-hwC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFE-jH-LDO">
+                                                <rect key="frame" x="0.0" y="188.5" width="1180" height="31.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="pST-z4-wtM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="5sp-aL-bPH"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3qp-Wv-n1Y" secondAttribute="trailing" id="8qx-Hv-AyG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3qp-Wv-n1Y" secondAttribute="bottom" id="SPa-Db-hWE"/>
+                            <constraint firstItem="3qp-Wv-n1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fP6-Fn-Y4K"/>
+                            <constraint firstItem="3qp-Wv-n1Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zDp-dH-avJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="agacImageView" destination="wIn-KE-7ay" id="ay8-qF-QOq"/>
+                        <outlet property="cozumLabel" destination="XpX-V0-AWr" id="syD-oK-VIA"/>
+                        <outlet property="puanLabel" destination="qFE-jH-LDO" id="aUX-yc-qgY"/>
+                        <outletCollection property="harfButonlari" destination="pJi-xD-Cyl" collectionClass="NSMutableArray" id="4i4-mt-jgA"/>
+                        <outletCollection property="harfButonlari" destination="7bD-PM-4jC" collectionClass="NSMutableArray" id="BVr-G9-xFy"/>
+                        <outletCollection property="harfButonlari" destination="7Pi-Px-cG5" collectionClass="NSMutableArray" id="9oV-Kq-Jgd"/>
+                        <outletCollection property="harfButonlari" destination="XRk-YD-8MW" collectionClass="NSMutableArray" id="zM7-fa-Vbd"/>
+                        <outletCollection property="harfButonlari" destination="vz3-qO-z1Z" collectionClass="NSMutableArray" id="l5j-bL-SdK"/>
+                        <outletCollection property="harfButonlari" destination="6jf-FA-J1z" collectionClass="NSMutableArray" id="JSm-B8-S6T"/>
+                        <outletCollection property="harfButonlari" destination="C4t-hE-V3N" collectionClass="NSMutableArray" id="01l-4U-mcB"/>
+                        <outletCollection property="harfButonlari" destination="SbG-R4-1C8" collectionClass="NSMutableArray" id="Wxe-O1-ugK"/>
+                        <outletCollection property="harfButonlari" destination="SlM-ho-5pc" collectionClass="NSMutableArray" id="PPD-Gd-DUj"/>
+                        <outletCollection property="harfButonlari" destination="7bD-PM-4jC" collectionClass="NSMutableArray" id="sfe-Ie-yPn"/>
+                        <outletCollection property="harfButonlari" destination="wRP-Rt-HfQ" collectionClass="NSMutableArray" id="jfh-Ny-rIy"/>
+                        <outletCollection property="harfButonlari" destination="VUL-Gh-29Z" collectionClass="NSMutableArray" id="urE-tO-zzV"/>
+                        <outletCollection property="harfButonlari" destination="J4b-Xa-2tj" collectionClass="NSMutableArray" id="nOr-KF-xf6"/>
+                        <outletCollection property="harfButonlari" destination="uOP-Wb-udA" collectionClass="NSMutableArray" id="oI8-nH-3hk"/>
+                        <outletCollection property="harfButonlari" destination="bzu-Dj-ivL" collectionClass="NSMutableArray" id="nNB-WB-dF0"/>
+                        <outletCollection property="harfButonlari" destination="Syp-fs-zUm" collectionClass="NSMutableArray" id="UoY-jQ-0I1"/>
+                        <outletCollection property="harfButonlari" destination="vKY-fU-PNh" collectionClass="NSMutableArray" id="cLO-jv-Ne0"/>
+                        <outletCollection property="harfButonlari" destination="Abd-bE-oMA" collectionClass="NSMutableArray" id="z19-yD-k7H"/>
+                        <outletCollection property="harfButonlari" destination="VB1-m0-W8N" collectionClass="NSMutableArray" id="cep-na-cCU"/>
+                        <outletCollection property="harfButonlari" destination="k2J-IL-541" collectionClass="NSMutableArray" id="Yzj-Xl-JJj"/>
+                        <outletCollection property="harfButonlari" destination="g8q-XF-GDA" collectionClass="NSMutableArray" id="BDN-Fg-aJm"/>
+                        <outletCollection property="harfButonlari" destination="ODC-S6-40Y" collectionClass="NSMutableArray" id="Xuu-Jj-JVN"/>
+                        <outletCollection property="harfButonlari" destination="ttz-eF-2c5" collectionClass="NSMutableArray" id="3sq-9d-bCh"/>
+                        <outletCollection property="harfButonlari" destination="kUD-ML-bqM" collectionClass="NSMutableArray" id="gMP-aa-foq"/>
+                        <outletCollection property="harfButonlari" destination="I8i-dW-JQY" collectionClass="NSMutableArray" id="ODS-To-mbC"/>
+                        <outletCollection property="harfButonlari" destination="Vqr-fd-O67" collectionClass="NSMutableArray" id="eof-az-XJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="173.89830508474577" y="-215.85365853658536"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tree 0" width="600" height="945"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

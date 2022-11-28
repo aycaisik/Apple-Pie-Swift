@@ -16,6 +16,7 @@
 		FD6EFF2829353A03008F3516 /* Apple_PieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6EFF2729353A03008F3516 /* Apple_PieTests.swift */; };
 		FD6EFF3229353A03008F3516 /* Apple_PieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6EFF3129353A03008F3516 /* Apple_PieUITests.swift */; };
 		FD6EFF3429353A03008F3516 /* Apple_PieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6EFF3329353A03008F3516 /* Apple_PieUITestsLaunchTests.swift */; };
+		FD6EFF41293545C3008F3516 /* Oyun.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6EFF40293545C3008F3516 /* Oyun.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FD6EFF2D29353A03008F3516 /* Apple PieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple PieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6EFF3129353A03008F3516 /* Apple_PieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_PieUITests.swift; sourceTree = "<group>"; };
 		FD6EFF3329353A03008F3516 /* Apple_PieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_PieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD6EFF40293545C3008F3516 /* Oyun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oyun.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				FD6EFF1229353A02008F3516 /* SceneDelegate.swift */,
 				FD6EFF1429353A02008F3516 /* ViewController.swift */,
 				FD6EFF1629353A02008F3516 /* Main.storyboard */,
+				FD6EFF40293545C3008F3516 /* Oyun.swift */,
 				FD6EFF1929353A03008F3516 /* Assets.xcassets */,
 				FD6EFF1B29353A03008F3516 /* LaunchScreen.storyboard */,
 				FD6EFF1E29353A03008F3516 /* Info.plist */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6EFF41293545C3008F3516 /* Oyun.swift in Sources */,
 				FD6EFF1529353A02008F3516 /* ViewController.swift in Sources */,
 				FD6EFF1129353A02008F3516 /* AppDelegate.swift in Sources */,
 				FD6EFF1329353A02008F3516 /* SceneDelegate.swift in Sources */,
