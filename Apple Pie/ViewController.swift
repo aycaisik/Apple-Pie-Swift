@@ -12,8 +12,11 @@ class ViewController: UIViewController {
     var kelimeListesi = ["elma", "kuş", "büyüleyici", "parlak", "böcek",
     "kodlama"]
     let tahminSayisi = 7
-    var toplamDogru = 0
-    var toplamYanlis = 0
+    var toplamDogru : Int = 0
+    var toplamYanlis : Int = 0
+        
+    
+  
     
     var simdikiOyun : Oyun!
     @IBOutlet weak var agacImageView: UIImageView!
@@ -36,12 +39,22 @@ class ViewController: UIViewController {
         let harf = Character(harfString.lowercased())
         simdikiOyun.tahminYapildi(char: harf)
         arayuzuGuncelle()
+        oyunuGuncelle()
     }
     
     func yeniTur(){
-        let yeniKelime = kelimeListesi.removeFirst()
-        simdikiOyun = Oyun(kelime: yeniKelime, kalanTahminSayisi: tahminSayisi, harfTahminleri: [])
-        arayuzuGuncelle()
+        
+        if !kelimeListesi.isEmpty{
+            let yeniKelime = kelimeListesi.removeFirst()
+            simdikiOyun = Oyun(kelime: yeniKelime, kalanTahminSayisi: tahminSayisi, harfTahminleri: [])
+            arayuzuGuncelle()
+            harfButonlariniAktiflestir((harfButonlari != nil))
+        
+        
+        }
+        else{
+            harfButonlariniAktiflestir((harfButonlari != nil))
+        }
         
     }
     
@@ -64,6 +77,24 @@ class ViewController: UIViewController {
         cozumLabel.text = boslukluKelime
         
     }
-    
+    func oyunuGuncelle(){
+        if simdikiOyun.kalanTahminSayisi==0 {
+            toplamYanlis+=1
+            
+            yeniTur()
+        };if simdikiOyun.kelime == simdikiOyun.formatlanmisKelime{
+            toplamDogru+=1
+            yeniTur()
+            
+        }else{
+            arayuzuGuncelle()
+        }
+        
+    }
+    func harfButonlariniAktiflestir(_ aktif: Bool) {
+      for buton in harfButonlari {
+        buton.isEnabled = aktif
+      }
+    }
 }
 
