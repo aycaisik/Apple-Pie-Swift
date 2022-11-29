@@ -46,9 +46,22 @@ class ViewController: UIViewController {
     }
     
     func arayuzuGuncelle(){
+        var harfler = [String]()
         puanLabel.text = "total dogru : \(toplamDogru) + total yanlis : \(toplamYanlis)"
         
         agacImageView.image = UIImage(named: "Tree \(tahminSayisi)")
+        
+        cozumLabel.text = simdikiOyun.formatlanmisKelime
+    
+        
+        for char in simdikiOyun.formatlanmisKelime{
+            var newcharım = String(char)
+            harfler.append(newcharım)
+            
+        }
+        var boslukluKelime = harfler.joined(separator: " ")
+        
+        cozumLabel.text = boslukluKelime
         
     }
     

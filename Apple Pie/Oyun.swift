@@ -10,6 +10,18 @@ struct Oyun{
     var kelime : String
     var kalanTahminSayisi : Int
     var harfTahminleri : [Character]
+    var formatlanmisKelime : String {
+        var kelimeTahmini :String = ""
+        for char in kelime{
+            if harfTahminleri.contains(char){
+                var newchar = String(char)
+                kelimeTahmini.append(newchar)
+            }else{
+                kelimeTahmini.append("_")
+            }
+        }
+        return kelimeTahmini
+    }
     
     mutating func tahminYapildi(char : Character){
         
