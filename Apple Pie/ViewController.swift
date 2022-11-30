@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var kelimeListesi = ["elma", "kuş", "büyüleyici", "parlak", "böcek",
+    var kelimeListesi = ["elma", "kus", "büyüleyici", "parlak", "bocek",
     "kodlama"]
     let tahminSayisi = 7
     var toplamDogru : Int = 0
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         var harfler = [String]()
         puanLabel.text = "total dogru : \(toplamDogru) + total yanlis : \(toplamYanlis)"
         
-        agacImageView.image = UIImage(named: "Tree \(tahminSayisi)")
+        agacImageView.image = UIImage(named: "Tree \(simdikiOyun.kalanTahminSayisi)")
         
         cozumLabel.text = simdikiOyun.formatlanmisKelime
     
