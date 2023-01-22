@@ -1,5 +1,5 @@
 # Apple-Pie-Swift
-Simple hangman game 
+This app is a simple hangman game designed with apple tree.
 
 
 <p float="left">
