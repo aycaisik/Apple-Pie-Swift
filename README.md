@@ -1,4 +1,4 @@
-# Apple-Pie-Swift
+# ApplePie-Swift
 This app is a simple hangman game designed with apple tree.
 
 
