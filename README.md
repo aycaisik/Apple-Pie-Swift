@@ -1,7 +1,5 @@
 # ApplePie-Swift
 This app is a simple hangman game designed with apple tree.
-Your total score will change depending on whether you know it right or wrong.
-
 
 <p float="left">
 <img src="https://user-images.githubusercontent.com/117450558/205115012-74cdaa78-138f-45f7-b3d6-d77f50ff66c3.png" width="375"/>
